@@ -1,0 +1,27 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Recipe Book</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+       <li routerLinkActive="active"><a [routerLink]="['/recepie']">Recipes</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['/Shopping']">Shopping List</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown" rbDropdown>
+          <a class="dropdown-toggle"
+           role="button"
+            aria-haspopup="true"
+             aria-expanded="false">Recepie Managagement <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a (click)="onStore()" style="cursor:pointer;">Store Recepies</a></li>
+            <li><a (click)="onFetch()" style="cursor:pointer;">Retrive Recepies</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

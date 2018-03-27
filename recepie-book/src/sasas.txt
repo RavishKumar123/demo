@@ -1,0 +1,6 @@
+Task you will be doing: 
+1. Add login functionality to login page.
+2. Upload mySql db to GoDaddy.
+3. After login website will be open which I'll provide
+and you have to add on 
+GoDaddy hosting as well against domain name.
